@@ -7,7 +7,7 @@ import 'tachyons';
 import {robots} from './robots'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const cards = robots.map(bot => 
+const cardList = robots.map(bot => 
   <div>
     <Card id={bot.id} name={bot.name} email={bot.email} />
   </div>
@@ -15,7 +15,7 @@ const cards = robots.map(bot =>
 root.render(
   <React.StrictMode>
     <div>
-      {cards}
+      {cardList}
     </div>
   </React.StrictMode>
 );
